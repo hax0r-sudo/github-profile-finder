@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: cadetblue; 
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 20px;
+    background: rgb(0, 0, 0);
+}
+
+.nav-bar i {
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+}
+
+.nav-bar h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+
+.box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-section {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: system-ui;
+    box-shadow: 0px 20px 30px -10px rgba(119,129,139, 0.4);
+}
+
+.input {
+    width: 100%;
+    padding: 9px;
+    border-radius: 6px;
+    border: 2px solid #717171;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.input:focus {
+    border-color: #4e4e4e;
+    box-shadow: 0 0 5px rgba(80, 80, 80, 0.4);
+}
+
+.btn-section {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 8px;
+    width: 110px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(226, 226, 226);
+    transition: background-color 0.3s ease;
+}
+
+.btn:active {
+    background-color: rgb(197, 197, 197);
+}
+
+
+.result {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: cadetblue;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.profile-card {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    font-family: system-ui;
+
+    animation: slideInRight 0.4s ease-out; 
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.visit-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background: #24292e;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.visit-btn:hover {
+    background: black;
+}
